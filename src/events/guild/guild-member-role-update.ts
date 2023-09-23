@@ -7,7 +7,7 @@ const name = 'guildMemberUpdate';
 const once = false;
 const execute = async (oldMember: GuildMember, newMember: GuildMember, client: Client<boolean>) => {
   if (!!roleId && !!channelId) {
-    if (newMember.roles.cache.some((r) => r.id === roleId)) {
+    if (newMember.roles.cache.has(roleId) && !oldMember.roles.cache.has(roleId)) {
       const channel = client.channels.cache.get(channelId);
       if (channel.type === ChannelType.GuildText) {
         const resultEmbed = new EmbedBuilder()
