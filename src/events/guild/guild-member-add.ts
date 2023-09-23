@@ -14,7 +14,7 @@ const execute = async (joinMember: GuildMember, client: Client<boolean>) => {
         .setThumbnail(joinMember.displayAvatarURL())
         .addFields({
           name: '--加入通知--',
-          value: `${joinMember.displayName} **加入了** :)\r
+          value: `<@${joinMember.id}> **加入了** :)\r
           請至<#1122160395361194054>報名! \r
           如有其他問題私訊 <@486147901802938370> 或 <@270118954805100545>`,
         })
