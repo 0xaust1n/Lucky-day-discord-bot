@@ -1,0 +1,19 @@
+{
+  "name": "bun-discord-bot",
+  "author": "Aust1n",
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "tsc && node ./dist/app.js",
+    "deploy": "bun src/deploy-command.ts"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^1.3.0",
+    "discord": "^0.8.2",
+    "discord-api-types": "^0.37.56",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.0.3",
+    "firebase-admin": "^9.11.1",
+    "typescript": "^5.2.2"
+  }
+}
