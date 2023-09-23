@@ -1,27 +1,13 @@
-# Disocrd Bot Template with Bun
-
-## Feature
-- Blank Template
-- Native support with Typescript
-- Interaction Command
-- Deploying Command to Server
+# Disocrd Bot for LuckyDay
 
 
 ## Installation
-- Bun
-
-  - Install with terminal  
-  
-    ```bash
-    curl -fsSL https://bun.sh/install | bash -s "bun-v1.0.0"
-    ```
-  - [Other Method](https://bun.sh/docs/installation)
-
+- Node v18
 
 - Depens
 
 ```bash 
-bun i
+npm i
 ```
 
 ## Start
@@ -31,5 +17,5 @@ bun i
 > Then filling the value
 
 ```bash
-bun dev
+npm run dev
 ```
