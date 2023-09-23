@@ -10,7 +10,11 @@ const execute = async (leaveMember: GuildMember, client: Client<boolean>) => {
     if (channel.type === ChannelType.GuildText) {
       const resultEmbed = new EmbedBuilder()
         .setColor(0x0099ff)
-        .setAuthor({ name: leaveMember.displayName, iconURL: leaveMember.displayAvatarURL() })
+        .setAuthor({
+          name: 'LuckDay',
+          iconURL:
+            'https://media.discordapp.net/attachments/1103170701634043996/1155255407766425721/image.png?width=424&height=402',
+        })
         .setThumbnail(leaveMember.displayAvatarURL())
         .addFields({
           name: '--離開通知--',
