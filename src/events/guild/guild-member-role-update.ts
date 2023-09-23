@@ -16,7 +16,7 @@ const execute = async (oldMember: GuildMember, newMember: GuildMember, client: C
           .setThumbnail(newMember.displayAvatarURL())
           .addFields({
             name: '--入會通知--',
-            value: `我們熱烈歡迎 \`${newMember.displayName}\` 加入公會！！`,
+            value: `我們熱烈歡迎 <@${newMember.id}> 加入公會！！`,
           })
           .setTimestamp();
 
