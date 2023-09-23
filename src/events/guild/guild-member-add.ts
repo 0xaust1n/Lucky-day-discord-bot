@@ -16,7 +16,8 @@ const execute = async (joinMember: GuildMember, client: Client<boolean>) => {
           name: '--加入通知--',
           value: `<@${joinMember.id}> **加入了** :)\r
           請至<#1122160395361194054>報名! \r
-          如有其他問題私訊 <@486147901802938370> 或 <@270118954805100545>`,
+          如有其他問題私訊: \r
+          - <@486147901802938370> \r- <@270118954805100545> \r `,
         })
 
         .setTimestamp();

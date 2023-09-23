@@ -16,9 +16,7 @@ const execute = async (leaveMember: GuildMember, client: Client<boolean>) => {
           name: '--離開通知--',
           value: `${leaveMember.displayName} **離開了** :(`,
         })
-
         .setTimestamp();
-
       channel.send({ embeds: [resultEmbed] });
     }
   }
