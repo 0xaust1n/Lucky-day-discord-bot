@@ -14,7 +14,10 @@ const execute = async (oldMember: GuildMember, newMember: GuildMember, client: C
           .setColor(0x0099ff)
           .setAuthor({ name: newMember.displayName, iconURL: newMember.displayAvatarURL() })
           .setThumbnail(newMember.displayAvatarURL())
-          .addFields({ name: 'Lucyday機器人', value: `歡迎 \`${newMember.displayName}\` 加入公會！！` })
+          .addFields({
+            name: '--入會通知--',
+            value: `我們熱烈歡迎 \`${newMember.displayName}\` 加入公會！！`,
+          })
           .setTimestamp();
 
         channel.send({ embeds: [resultEmbed] });
