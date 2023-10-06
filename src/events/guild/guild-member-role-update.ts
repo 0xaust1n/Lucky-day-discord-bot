@@ -13,14 +13,14 @@ const execute = async (oldMember: GuildMember, newMember: GuildMember, client: C
         const resultEmbed = new EmbedBuilder()
           .setColor(0x0099ff)
           .setAuthor({
-            name: 'LuckDay',
+            name: 'Revival Kyuubi',
             iconURL:
               'https://media.discordapp.net/attachments/1103170701634043996/1155255407766425721/image.png?width=424&height=402',
           })
           .setThumbnail(newMember.displayAvatarURL())
           .addFields({
             name: '--入會通知--',
-            value: `我們熱烈歡迎 <@${newMember.id}> 加入公會！！`,
+            value: `我們熱烈歡迎 <@${newMember.id}> 加入 Revival Kyuubi 公會！！`,
           })
           .setTimestamp();
 
